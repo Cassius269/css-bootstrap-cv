@@ -1,6 +1,6 @@
-/* Déclaration des variables CSS utilises au projet*/
+/* Déclaration des variables CSS utilises au projet */
 :root{
-    --background-cv: #f04434;
+    --color-cv: rgb(245, 82, 18);
 }
 
 /* Déclaration de la font family de Google installée en CDN */
@@ -29,7 +29,16 @@ body {
 }
 
 .bg-cv {
-    background-color: var(--background-cv) !important;
+    background-color: var(--color-cv) !important;
+}
+
+/***SECTION de présentation ****/
+#photoProfile {
+    max-width: 400px;
+}
+
+#buttonDownloadCV:hover {
+    color:var(--color-cv);
 }
 
 /* Surchager des couleurs et de l'effet de survol sur le menu de navigation du CV */
@@ -39,5 +48,16 @@ body {
 
 .nav-link:hover {
     background-color: white;
-    color:var(--background-cv) !important;
+    color:var(--color-cv) !important;
+}
+
+/******** SECTION des compétences ******/
+.color-cv {
+    color: var(--color-cv)
+}
+
+#divDivider {
+    width: 131px;
+    border-top: 2px solid var(--color-cv);
+    margin: 20px auto;
 }

@@ -31,16 +31,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">MOI</a>
+                        <a class="nav-link" aria-current="page" href="#sectionPresentation">MOI</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">COMPETENCES</a>
+                        <a class="nav-link text-uppercase" href="#sectionSkills">compétences</a>
                         </li>
                             <li class="nav-item">
-                        <a class="nav-link" href="#">EXPERIENCE</a>
+                        <a class="nav-link text-uppercase" href="#">Expérience</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">EDUCATION</a>
+                        <a class="nav-link text-uppercase" href="#">éducation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">PORTFOLIO</a>
@@ -54,11 +54,72 @@
         </nav>
     </header>
     <main class="pt-2 mt-5">
-        <section class="text-center vh-100 bg-cv">
-            <img src="/assets/images/photo.jpg" alt="photographie me représentant" class="img-fluid rounded-circle my-4">
-            <h1 class="text-white">Hello, moi c'est Jean</h1>
+        <!-- Section de présentation -->
+        <section class="text-center vh-100 bg-cv container-fluid" id="sectionPresentation">
+            <img src="/assets/images/photo.jpg" alt="photographie me représentant" class="rounded-circle my-4" loading="lazy" id="photo">
+            <h1 class="text-white fw-bold">Hello, moi c'est Jean</h1>
             <p class="fs-5 my-4"><b>Développeur Web</b></p>
-            <a href="/assets/docs/CV_DUPONT.pdf" target="_blank"><button type="button" class="btn btn-outline-light px-5 py-3">TELECHARGER CV</button></a>
+            <a href="/assets/docs/CV_DUPONT.pdf" target="_blank"><button type="button" class="btn btn-outline-light px-5 py-3" id="buttonDownloadCV">TELECHARGER CV</button></a>
+        </section>
+        
+        <!-- Section de présentation -->
+        <section class="my-5 vh-100" id="sectionSkills">
+            <div id="divDivider"></div>
+            <h2 class="color-cv text-center fw-bold text-uppercase">Compétences</h2>
+
+            <div class="container">
+                 <div class="row">
+                <!-- Progress bar des compétences HTML -->
+                <div class="mt-2 col-md-6 col-xl-4">
+                    <div class="progress" role="progressbar" aria-label="html skill" aria-value-now="85" aria-valuemin="0" aria-valuemax="100" style="height: 35px">
+                        <div class="progress-bar bg-cv fw-bold" style="width: 85%;">HTML 85%</div>
+                    </div>
+                </div>
+
+                <!-- Progress bar des compétences CSS -->
+                <div class="mt-2 col-md-6 col-xl-4">
+                    <div class="progress" role="progressbar" aria-label="css skill" aria-value-now="85" aria-valuemin="0" aria-valuemax="100" style="height: 35px">
+                        <div class="progress-bar bg-cv fw-bold" style="width: 85%;">CSS 85%</div>
+                    </div>
+                </div>
+
+                <!-- Progress bar des compétences Javascript -->
+                <div class="mt-2 col-md-6 col-xl-4">
+                    <div class="progress" role="progressbar" aria-label="javascript skill" aria-value-now="80" aria-valuemin="0" aria-valuemax="100" style="height: 35px">
+                        <div class="progress-bar bg-cv fw-bold" style="width: 80%;">JAVASCRIPT 80%</div>
+                    </div>
+                </div>     
+
+                <!-- Progress bar des compétences PHP -->   
+                <div class="mt-2 col-md-6 col-xl-4">
+                    <div class="progress" role="progressbar" aria-label="PHP skill" aria-value-now="80" aria-valuemin="0" aria-valuemax="100" style="height: 35px">
+                     <div class="progress-bar bg-cv fw-bold" style="width: 80%;">PHP 80%</div>
+                    </div>
+                </div>   
+
+                <!-- Progress bar des compétences Javascript -->
+                <div class="mt-2 col-md-6 col-xl-4">
+                    <div class="progress" role="progressbar" aria-label="Symfony skill" aria-value-now="90" aria-valuemin="0" aria-valuemax="100" style="height: 35px">
+                        <div class="progress-bar bg-cv fw-bold" style="width: 90%;">SYMFONY 90%</div>
+                    </div>
+                </div>   
+
+                <!-- Progress bar des compétences Bootstrap -->
+                <div class="mt-2 col-md-6 col-xl-4">
+                    <div class="progress" role="progressbar" aria-label="Symfony skill" aria-value-now="65" aria-valuemin="0" aria-valuemax="100" style="height: 35px">
+                        <div class="progress-bar bg-cv fw-bold" style="width: 65%;">BOOTSTRAP 65%</div>
+                    </div>
+                </div>  
+
+                <!-- Progress bar des compétences Linux -->
+                <div class="mt-2 col-md-6 col-xl-4">
+                    <div class="progress" role="progressbar" aria-label="Symfony skill" aria-value-now="70" aria-valuemin="0" aria-valuemax="100" style="height: 35px">
+                        <div class="progress-bar bg-cv fw-bold" style="width: 70%;">LINUX 70%</div>
+                    </div>
+                </div>  
+            </div>
+            </div>
+           
         </section>
     </main>
     <footer>
