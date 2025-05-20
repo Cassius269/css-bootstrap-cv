@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <!--Intégration des icônes Bootstrap-->   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"> 
     <!-- Liaison des assets css et js -->
      <link rel="stylesheet" href="assets/css/style.css">
      <script src="/assets/js/script.js" defer></script>
@@ -37,7 +39,7 @@
                         <a class="nav-link text-uppercase" href="#sectionSkills">compétences</a>
                         </li>
                             <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Expérience</a>
+                        <a class="nav-link text-uppercase" href="#sectionXpPro">Expérience</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link text-uppercase" href="#">éducation</a>
@@ -62,9 +64,9 @@
             <a href="/assets/docs/CV_DUPONT.pdf" target="_blank"><button type="button" class="btn btn-outline-light px-5 py-3" id="buttonDownloadCV">TELECHARGER CV</button></a>
         </section>
         
-        <!-- Section de présentation -->
-        <section class="my-5 vh-100" id="sectionSkills">
-            <div id="divDivider"></div>
+        <!-- Section des compétences techniques -->
+        <section class="my-5 vh-100 align-content-center" id="sectionSkills">
+            <div class="divDivider"></div>
             <h2 class="color-cv text-center fw-bold text-uppercase">Compétences</h2>
 
             <div class="container">
@@ -120,6 +122,74 @@
             </div>
             </div>
            
+        </section>
+
+        <section class="container-fluid bg-cv py-5" id="sectionXpPro">
+            <div class="divDivider"></div>
+            <h2 class="text-center fw-bold text-uppercase text-light">Expérience professionnelle</h2>
+
+            <ul class="timeline">
+                <!-- Expérience de chez Google -->
+                <li>
+                    <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="text-uppercase">Google</h3>
+                                <h4 class="fw-bold color-cv">Développeur Web Sénior</h4>
+                                <p class="text-muted"><i class="bi bi-clock-fill"></i> Depuis 2022</p>
+                            </div>  
+                            <div class="timeline-body">
+                                <ul>
+                                    <li>Ajout de la possibilité d'écouter une traduction dans Google Translate</li>
+                                    <li class="mt-2">Développement de Google Suggest en mode Offline</li>
+                                    <li class="mt-2">Nouveau design du player de Youtube adapté au mobile</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Expérience de chez Facebook -->
+                <li>
+                    <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="text-uppercase">Facebook</h3>
+                                <h4 class="fw-bold color-cv">Développeur Web </h4>
+                                <p class="text-muted"><i class="bi bi-clock-fill"></i> 2017 - 2020</p>
+                            </div>  
+                            <div class="timeline-body">
+                                <ul>
+                                    <li>Développement du bouton Share pour les applis Web mobile</li>
+                                    <li class="mt-2">Lancement automatique des vidéos en mode mute depuis la Timeline</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Expérience de chez Twitter -->
+                <li>
+                    <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="text-uppercase">Twitter</h3>
+                                <h4 class="fw-bold color-cv">Développeur Web junior</h4>
+                                <p class="text-muted"><i class="bi bi-clock-fill"></i> 2014 - 2017</p>
+                            </div>  
+                            <div class="timeline-body">
+                                <ul>
+                                    <li>Conception et Développement du Retweet pour l'appli Web</li>
+                                    <li class="mt-2">Intégration des vidéos sur les applis web mobile</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
