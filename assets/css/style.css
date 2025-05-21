@@ -177,3 +177,8 @@ body {
 #sectionXpPro h4 {
     font-size: 17px !important;
 }
+
+/**** SECTION éducation ***/
+#sectionEducation article {
+    background: #8080801f;
+}
