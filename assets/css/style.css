@@ -218,3 +218,21 @@ body {
 .carousel-control-next {
         bottom: 0.7rem; /* rehausser le bouton next pour alignement avec le bouton previous*/
 }
+
+/**** FOOTER ****/
+footer {
+    padding: 2.5rem 0px;
+}
+
+footer h5 a {
+    color: white;
+    text-decoration: none;
+}
+
+footer  i {
+    line-height: 35px;
+}
+
+footer  i:hover {
+    font-size: 1.6rem !important;
+}
