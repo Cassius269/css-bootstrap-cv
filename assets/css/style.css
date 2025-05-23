@@ -32,18 +32,18 @@ body {
     background-color: var(--color-cv) !important;
 }
 
-/***SECTION de présentation ****/
-/* #photoProfile {
-    width: 300px;
-} */
-
 #buttonDownloadCV:hover {
     color:var(--color-cv);
 }
 
 /* Surchager des couleurs et de l'effet de survol sur le menu de navigation du CV */
 .navbar-nav .nav-link {
-  color: white;
+  color: white !important;
+}
+
+.navbar-nav .active {
+  background-color: white !important;
+  color: var(--color-cv) !important;
 }
 
 .nav-link:hover {
