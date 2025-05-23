@@ -48,7 +48,7 @@
                             <a class="nav-link" href="#sectionPortfolio">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">RECOMMANDATIONS</a>
+                            <a class="nav-link" href="#sectionRecommendations">RECOMMANDATIONS</a>
                         </li>
                     </ul>
                 </div>
@@ -58,10 +58,11 @@
     <main class="pt-2 mt-5">
         <!-- Section de présentation -->
         <section class="text-center vh-100 bg-cv container-fluid" id="sectionPresentation">
-            <img src="/assets/images/photo.jpg" alt="photographie me représentant" class="rounded-circle my-4" loading="lazy" id="photo">
+            <img src="/assets/images/photo.webp" alt="photographie me représentant" class="rounded-circle my-4 img-fluid" id="photoProfile" width="300" height="400">
             <h1 class="text-white fw-bold">Hello, moi c'est Jean</h1>
             <p class="fs-5 my-4"><b>Développeur Web</b></p>
-            <a href="/assets/docs/CV_DUPONT.pdf" target="_blank"><button type="button" class="btn btn-outline-light px-5 py-3" id="buttonDownloadCV">TELECHARGER CV</button></a>
+            <!-- <a href="/assets/docs/CV_DUPONT.pdf" target="_blank"><button type="button" class="btn btn-outline-light px-5 py-3" id="buttonDownloadCV">TELECHARGER CV</button></a> -->
+            <a href="/assets/docs/CV_DUPONT.pdf" target="_blank" class="btn btn-outline-light px-5 py-3" id="buttonDownloadCV">TELECHARGER CV</a>     
         </section>
         
         <!-- Section des compétences techniques -->
@@ -124,6 +125,7 @@
            
         </section>
 
+        <!-- Section expérience professionnelle -->
         <section class="container-fluid bg-cv py-5" id="sectionXpPro">
             <div class="divDivider"></div>
             <h2 class="text-center fw-bold text-uppercase text-light pb-5">Expérience professionnelle</h2>
@@ -255,6 +257,51 @@
                         <img class="img-fluid img-thumbnail" src="/assets/images/blog-php-symfony.png" alt="" width="350">
                     </a>
                 </div>          
+            </div>
+        </section>
+
+        <!-- Section des recommandations -->
+        <section id="sectionRecommendations" class="container d-flex align-items-center flex-column py-md-5">
+            <div class="divDivider"></div>
+            <h2 class="text-uppercase text-center color-cv fw-bold">Recommandations</h2>
+            <!---La carousel des recommandations-->
+            <div id="diapoRecommendations" class="carousel slide w-50 m-auto caroussel-dark">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#diapoRecommendations" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#diapoRecommendations" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#diapoRecommendations" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div style="height: 280px;"></div>
+                    <div class="carousel-caption d-md-block">
+                        <h6 class="color-cv fw-bold">"L'esprit le plus créatif que j'ai vu de toute ma vie..."</h6>
+                        <p class="fw-bold text-black ">Jack Dorsey, Twitter Founder and CEO</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div style="height: 280px;"></div>
+                    <div class="carousel-caption d-md-block">
+                        <h6 class="color-cv fw-bold">"John t'es le meilleur! Merci pour tout..."</h6>
+                        <p class="fw-bold text-black ">Larry Page, Google Co-Founder</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div style="height: 280px;"></div>
+                    <div class="carousel-caption d-md-block">
+                        <h6 class="color-cv fw-bold">"Merci John de m'avoir appris à coder... Tout ça c'est grâce à toi!"</h6>
+                        <p class="fw-bold text-black ">Mark Zuckerberg, Facebook Founder and CEO</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#diapoRecommendations" data-bs-slide="prev">
+                 <i class="bi bi-chevron-left carousel-control-left-icon" aria-hidden="true"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#diapoRecommendations" data-bs-slide="next">
+                 <i class="bi bi-chevron-right carousel-control-next-icon" aria-hidden="true"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
             </div>
         </section>
     </main>
